@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+
+<script>
+    window.onload = function() {
+        bgSound = new Audio("bgSound.mp3");
+        bgSound.loop = true;
+        bgSound.play();
+    }
+
+    function touch(n){
+        touchSound = new Audio("audio"+n+".mp3");
+        touchSound.play();
+    }
+</script>
+<style>
+    li{
+        list-style: none;
+        display: inline;
+    }
+    #soundPad img{
+        width:45%;
+    }
+
+</style>
+
+</head>
+<body>
+<div id="warp">
+
+    <div id="soundPad">
+        <ul>
+            <li><img onclick="touch('1');" src="note001.png"></li>
+            <li><img onclick="touch('2');" src="note001.png"></li>
+            <li><img onclick="touch('3');" src="note001.png"></li>
+            <li><img onclick="touch('4');" src="note001.png"></li>
+            <li><img onclick="touch('5');" src="note001.png"></li>
+            <li><img onclick="touch('6');" src="note001.png"></li>
+            <li><img onclick="touch('7');" src="note001.png"></li>
+            <li><img onclick="touch('8');" src="note001.png"></li>
+            <li><img onclick="touch('9');" src="note001.png"></li>
+            <li><img onclick="touch('10');" src="note001.png"></li>
+        </ul>
+
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
