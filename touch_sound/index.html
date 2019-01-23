@@ -5,14 +5,29 @@
 
 <script>
     window.onload = function() {
-        bgSound = new Audio("bgSound.mp3");
-        bgSound.loop = true;
-        bgSound.play();
+        const startButton = document.querySelector(".start-button");
+        startButton.addEventListener("click", handleStartButton);
     }
 
     function touch(n){
         touchSound = new Audio("audio"+n+".mp3");
         touchSound.play();
+    }
+
+    function handleStartButton() {
+        playBackgroundMusic();
+        hideCover();
+    }
+
+    function playBackgroundMusic() {
+        bgSound = new Audio("bgSound.mp3");
+        bgSound.loop = true;
+        bgSound.play();
+    }      
+
+    function hideCover() {
+        const cover = document.querySelector(".cover");
+        cover.style.display = "none";
     }
 </script>
 <style>
@@ -22,6 +37,34 @@
     }
     #soundPad img{
         width:45%;
+    }
+
+    .cover {
+        width: 100vw;
+        height: 100vh;
+        background: rgba(100,100,100, 0.5);
+        z-index: 10;
+        position: fixed;
+        top:0;
+        left:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .start-button {
+        width: 30vw;
+        height: 7vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+    }
+
+    .start-button-text {
+        font-size: 5rem;
+
     }
 
 </style>
@@ -45,12 +88,13 @@
         </ul>
 
     </div>
-
 </div>
-
-
-
-
-
+<div class="cover">
+    <div class="start-button">
+        <div class="start-button-text">
+            START
+        </div>
+    </div>
+</div>
 </body>
 </html>
