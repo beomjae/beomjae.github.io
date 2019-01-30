@@ -1,0 +1,133 @@
+    body{
+        background-color:#000;
+        width: 100%;        
+        height: 100%;;
+    }
+
+    li{
+        list-style: none;
+        position: relative;   
+        
+    }
+
+    #soundPad{
+        position: relative;
+    }
+
+    #soundPad img{
+        position: relative;
+        width:60px;
+    }
+
+    .cover {
+        width: 100vw;
+        height: 100vh;
+        background: rgba(100,100,100, 0.5);
+        z-index: 10;
+        position: fixed;
+        top:0;
+        left:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .start-button {
+        width: 30vw;
+        height: 7vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+    }
+
+    .start-button-text {
+        font-size: 5rem;
+
+    }
+
+    #top{
+        position: relative;
+        padding:10px;
+    }
+    #top .sp1{
+        float: left;
+        padding-top:50px;
+    }
+    #top .sp2{
+        float: right;
+        padding-top:50px;
+    }
+
+    #top .sp3{
+        margin-left:20px;
+    }
+
+    .sp4{
+        position: relative;
+        left:20px;
+        top:-10px;       
+    }
+    .sp5{
+        position: relative;
+        left:20px; 
+        top:10px;       
+    }
+    .sp6{
+        position: relative;
+        left:20px; 
+        top:20px;        
+    }
+    .sp7{
+        position: relative;        
+        top:130px;        
+        left:50px;
+    }
+    .sp8{
+        position: relative;        
+        top:100px; 
+        left:-80px;       
+    }
+
+    .li1{        
+        top:20px;          
+        left:0px;  
+    }
+    .li2{        
+        top:-20px;          
+        left:10px;  
+    }
+    .li3{        
+        top:20px;
+        left:10px;  
+    }
+
+    .li4{        
+        top:0px;
+        left:90px;  
+    }
+    .li5{        
+        top:10px;
+        left:130px;  
+    }
+    .li6{        
+        top:80px;
+        left:10px;  
+    }
+    .li7{        
+        top:100px;
+        left:-140px;  
+    }
+    .li8{        
+        top:30px;
+        left:20px;  
+    }
+    .li9{        
+        top:30px;
+        left:210px;  
+    }
+    .li10{        
+        top:-80px;
+        left:-50px;  
+    }

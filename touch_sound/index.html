@@ -1,7 +1,9 @@
 
 <!doctype html>
 <html lang="ko">
+<meta name="viewport" content="width=device-width, user-scalable=no">
 <head>
+<link href="style.css" rel="stylesheet" type="text/css" />
 
 <script>
     window.onload = function() {
@@ -10,6 +12,7 @@
     }
 
     function touch(n){
+        console.log(n);
         touchSound = new Audio("audio"+n+".mp3");
         touchSound.play();
     }
@@ -30,63 +33,33 @@
         cover.style.display = "none";
     }
 </script>
-<style>
-    li{
-        list-style: none;
-        display: inline;
-    }
-    #soundPad img{
-        width:45%;
-    }
-
-    .cover {
-        width: 100vw;
-        height: 100vh;
-        background: rgba(100,100,100, 0.5);
-        z-index: 10;
-        position: fixed;
-        top:0;
-        left:0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .start-button {
-        width: 30vw;
-        height: 7vh;
-        background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 25px;
-    }
-
-    .start-button-text {
-        font-size: 5rem;
-
-    }
-
-</style>
 
 </head>
 <body>
 <div id="warp">
-
-    <div id="soundPad">
-        <ul>
-            <li><img onclick="touch('1');" src="note001.png"></li>
-            <li><img onclick="touch('2');" src="note001.png"></li>
-            <li><img onclick="touch('3');" src="note001.png"></li>
-            <li><img onclick="touch('4');" src="note001.png"></li>
-            <li><img onclick="touch('5');" src="note001.png"></li>
-            <li><img onclick="touch('6');" src="note001.png"></li>
-            <li><img onclick="touch('7');" src="note001.png"></li>
-            <li><img onclick="touch('8');" src="note001.png"></li>
-            <li><img onclick="touch('9');" src="note001.png"></li>
-            <li><img onclick="touch('10');" src="note001.png"></li>
-        </ul>
-
+    <div id="top">
+        <img class="sp1" width="100px" src="02.png">
+        <img class="sp3" width="100px;" src="03.png">        
+        <img class="sp2" width="100px" src="01.png">
+    </div>
+    
+    <img class="sp4" width="30px;" src="06.png">
+    <img class="sp5" width="30px;" src="07.png">
+    <img class="sp6" width="30px;" src="08.png">
+    <img class="sp7" width="30px;" src="04.png">
+    <img class="sp8" width="30px;" src="05.png">
+    
+    <div id="soundPad">        
+        <img class="li1" onclick="touch('1');" src="c4.png">
+        <img class="li2" onclick="touch('2');" src="c2.png">
+        <img class="li3" onclick="touch('3');" src="c3.png">
+        <img class="li4" onclick="touch('4');" src="c4.png">
+        <img class="li5" onclick="touch('5');" src="c3.png">
+        <img class="li6" onclick="touch('6');" src="c2.png">
+        <img class="li7" onclick="touch('7');" src="c3.png">
+        <img class="li8" onclick="touch('8');" src="c4.png">
+        <img class="li9" onclick="touch('9');" src="c3.png">
+        <img class="li10" onclick="touch('10');" src="c2.png">
     </div>
 </div>
 <div class="cover">
